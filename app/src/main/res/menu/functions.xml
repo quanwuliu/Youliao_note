@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/create_team"
+        android:title="新建分组"/>
+    <item
+        android:id="@+id/batch_edit"
+        android:title="批量编辑"/>
+    <item
+        android:id="@+id/display_summary"
+        android:title="显示摘要"/>
+    <item
+        android:id="@+id/sort_by_date"
+        android:title="按日期排序"/>
+    <item
+        android:id="@+id/sort_by_title"
+        android:title="按标题排序"/>
+</menu>

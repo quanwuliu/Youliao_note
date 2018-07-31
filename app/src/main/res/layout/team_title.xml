@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="#5095fe"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:textColor="#ffffff"
+            android:background="#4095fe"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:text="新建分组"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:text="确定"
+            android:textColor="#ffffff"
+            android:background="#4095fe"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/team_name"
+            android:hint="在此处输入新分组名称"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/ok"
+            android:layout_alignStart="@+id/ok" />
+
+        <TextView
+            android:id="@+id/choose_team_context"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="选择组内容:"
+            android:textColor="#262626"
+            android:layout_marginTop="11dp"
+            android:layout_below="@+id/team_name"
+            android:layout_alignLeft="@+id/team_name"
+            android:layout_alignStart="@+id/team_name" />
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_height="303dp"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/choose_team_context"
+            android:layout_alignLeft="@+id/choose_team_context"
+            android:layout_alignStart="@+id/choose_team_context" />
+    </RelativeLayout>
+    </LinearLayout>
